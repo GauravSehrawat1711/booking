@@ -1,0 +1,35 @@
+.Navbar-container{
+ height: 50px;
+ background-color: #003580;
+ display: flex;
+ justify-content: center;
+}
+.innerContainer{
+    width:100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+.Name{
+    margin-top: 15px;
+    font-weight: 500;
+}
+.Buttons{
+    display: flex;
+    height: 35px;
+    margin-top: 10px;
+  
+    justify-content: space-between;
+}
+.NavButton{
+    margin-right: 10px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 500;
+
+}
+.NavButton:hover{
+    cursor: pointer;
+}

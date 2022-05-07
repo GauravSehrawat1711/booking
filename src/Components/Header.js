@@ -14,7 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { format } from "date-fns";
-export const Header = () => {
+export const Header = ({type}) => {
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -43,7 +43,7 @@ export const Header = () => {
 
   return (
     <div className="header">
-      <div className="headerContainer">
+      <div className={type==="list"?"headerContainer list":"headerContainer"}>
         <div className="headerList">
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faBed} />
@@ -63,6 +63,8 @@ export const Header = () => {
             <span>Taxi</span>
           </div>
         </div>
+        { type!=="list" &&
+        <> 
         <h1 className="headerDis">
           Stay connected,Enjoy every holiday ,Get high discount
         </h1>
@@ -126,6 +128,7 @@ export const Header = () => {
           </div>
           <button className="headerbtn">Search</button>
         </div>
+        </>}
       </div>
     </div>
   );

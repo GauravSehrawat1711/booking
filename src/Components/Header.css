@@ -92,11 +92,14 @@
     position: absolute;
     top:50px;
     margin-left: 0px;
+    z-index: 2;
 }
 .options{
     position: absolute;
     top:50px;
     color: black;
+    z-index: 2;
+    background-color: white;
    
 margin-top: 10px;
 padding: 10px;

@@ -1,0 +1,39 @@
+.fp {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.fpItem{
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.fpImg{
+    width: 100%;
+}
+.Rating{
+    display: flex;
+    flex-direction: column;
+}
+.Rating>button{
+   background-color: rgb(80, 80, 238);
+   color: white;
+    width: 35px;
+    border: none;
+    border-radius: 3px;
+}
+.fName{
+    font: bold;
+    font-weight: 500;
+}
+.CityName{
+    font-weight: 300;
+}
+.Price{
+    font-weight: 500
+    ;
+}

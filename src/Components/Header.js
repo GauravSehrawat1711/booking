@@ -46,31 +46,31 @@ export const Header = ({type}) => {
       <div className={type==="list"?"headerContainer list":"headerContainer"}>
         <div className="headerList">
           <div className="headerListItem active">
-            <FontAwesomeIcon icon={faBed} />
+            <FontAwesomeIcon icon={faBed}  className="a"/>
             <span>Hotels</span>
           </div>
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faCar} />
+            <FontAwesomeIcon icon={faCar} className="a"/>
             <span>Car Rental</span>
           </div>
 
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faPlane} />
+            <FontAwesomeIcon icon={faPlane} className="a"/>
             <span>Flight</span>
           </div>
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faTaxi} />
+            <FontAwesomeIcon icon={faTaxi} className="a"/>
             <span>Taxi</span>
           </div>
         </div>
         { type!=="list" &&
         <> 
         <h1 className="headerDis">
-          Stay connected,Enjoy every holiday ,Get high discount
+          Stay Connected,Enjoy Every Holiday ,Get High Discount
         </h1>
         <p className="para">
-          Get gift woutchers and addiditonal discounts and Easy guidence and
-          safety
+          Get Gift Woutchers And Addiditonal Discounts And Easy Guidence and
+          Safety
         </p>
         <button className="btn">Register/Sign in</button>
         <div className="headerSearch">
